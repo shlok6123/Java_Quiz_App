@@ -224,14 +224,11 @@ import java.awt.event.ActionListener;
              for(int i=0;i<useranswer.length;i++){
                  if(useranswer[i][0].equals(answers[i][0])){
                      score +=10;
-
-                 }else{
-                     score +=0;
                  }
 
             }
              setVisible(false);
-            new Score("User",0);
+            new Score("User",score);
         }
 
     }
@@ -280,8 +277,6 @@ import java.awt.event.ActionListener;
                 for (int i = 0; i < useranswer.length; i++) {
                     if (useranswer[i][0].equals(answers[i][0])) {
                         score += 10;
-                    } else {
-                        score += 0;
                     }
                 }
                 setVisible(false);
